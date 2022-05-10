@@ -74,15 +74,6 @@ img {
     font-family: 'Roboto';
 }
 
-.header {
-    border-bottom: 1px solid var(--header-border-line);
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-}
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -97,12 +88,23 @@ img {
     overflow: hidden;
 }
 
-.header-nav {
+/* --------------------------HEADER----------------------------------- */
+
+.header {
+    border-bottom: 1px solid var(--header-border-line);
+}
+
+.header__container {
     display: flex;
     align-items: center;
 }
 
-.header-logo {
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -114,7 +116,7 @@ img {
     padding-bottom: 25px;
 }
 
-.header-logo-web {
+.logo__web {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -123,7 +125,7 @@ img {
     color: var(--accent-color);
 }
 
-.header-link {
+.navigation__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -137,7 +139,7 @@ img {
     transition: color 250ms var(--timing-function);
 }
 
-.header-link.active::after {
+.navigation__link--active::after {
     content: '';
 
     display: block;
@@ -151,30 +153,30 @@ img {
     bottom: 0;
 }
 
-.header-nav-link .header-link.active {
+.navigation__list .navigation__link--active {
     color: var(--accent-color);
 }
 
-.header-nav-link {
+.navigation__list {
     display: flex;
     margin-left: 93px;
 }
 
-.header-nav-link .link-nav + .link-nav {
+.navigation__list .navigation__list + .navigation__list {
     margin-left: 50px;
 }
 
-.header-contacts {
+.contacts {
     display: flex;
     margin-left: auto;
 }
 
-.contact-item + .contact-item {
+.contacts__item + .contacts__item {
     margin-left: 50px;
     height: 16px;
 }
 
-.header-link-contact {
+.contacts__link {
     display: flex;
     align-items: center;
     padding-top: 32px;
@@ -186,20 +188,16 @@ img {
 
     transition: color 250ms var(--timing-function);
 }
-.icon-mail {
+
+.contacts__icon {
     margin-right: 10px;
     fill: currentColor;
 }
 
-.icon-mobile {
-    margin-right: 10px;
-    fill: currentColor;
-}
-
-.header-link:hover,
-.header-link:focus,
-.header-link-contact:hover,
-.header-link-contact:focus {
+.navigation__link:hover,
+.navigation__link:focus,
+.contacts__link:hover,
+.contacts__link:focus {
     color: var(--accent-color);
 }
 
