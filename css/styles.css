@@ -411,6 +411,8 @@ img {
     color: var(--second-text-color);
 }
 
+/* ______social_____ */
+
 .social {
     display: flex;
     justify-content: center;
