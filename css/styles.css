@@ -201,9 +201,9 @@ img {
     color: var(--accent-color);
 }
 
-/* ---------------------MAIN------------------------- */
+/* ------------------------------------------MAIN-------------------------------------------- */
 
-/* ---------------------HERO------------------------- */
+/* ------------------------------------------HERO-------------------------------------------- */
 
 .hero {
     background-color: var(--background-hero);
@@ -219,7 +219,7 @@ img {
     max-width: 1600px;
 }
 
-.hero-title {
+.hero__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -234,7 +234,7 @@ img {
     margin-right: auto;
 }
 
-.hero-btn {
+.hero__btn {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
@@ -254,12 +254,12 @@ img {
     transition: background-color 250ms var(--timing-function);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
     background-color: var(--hover-color-btn);
 }
 
-/* Особливості */
+/* ---------------------ОСОБЛИВОСТІ------------------------- */
 .features {
     padding-top: 94px;
     padding-bottom: 94px;
