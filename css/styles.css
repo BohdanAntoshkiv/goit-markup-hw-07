@@ -354,7 +354,7 @@ img {
     color: var(--button-text-color);
     background: var(--background-servises-text);
 }
-/* Команда */
+/* ---------------------TEAM------------------------- */
 
 .team {
     background-color: var(--background-team);
@@ -362,7 +362,7 @@ img {
     padding-bottom: 94px;
 }
 
-.team-header {
+.team__header {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -370,12 +370,12 @@ img {
 
     margin-bottom: 50px;
 }
-.team-list {
+.team__list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.team-list-item {
+.team__item {
     background-color: var(--background-team-list);
     width: 270px;
     border-radius: 0px 0px 4px 4px;
@@ -384,16 +384,16 @@ img {
         0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-list-item:nth-child(4n) {
+.team__item:nth-child(4n) {
     margin-right: 0;
 }
 
-.team-list-text {
+.team__text {
     padding-bottom: 30px;
     padding-top: 30px;
 }
 
-.team-name {
+.team__name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -402,7 +402,7 @@ img {
     margin-bottom: 10px;
 }
 
-.team-position {
+.team__position {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -411,16 +411,16 @@ img {
     color: var(--second-text-color);
 }
 
-.team-list-social {
+.social {
     display: flex;
     justify-content: center;
 }
 
-.team-social-item + .team-social-item {
+.social__item + .social__item {
     margin-left: 10px;
 }
 
-.team-social-link {
+.social__link {
     width: 44px;
     height: 44px;
     background-color: var(--background-page);
@@ -433,8 +433,8 @@ img {
     transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
-.team-social-link:hover,
-.team-social-link:focus {
+.social__link:hover,
+.social__link:focus {
     background-color: var(--accent-color);
     fill: var(--hover-icon-fill);
 }
