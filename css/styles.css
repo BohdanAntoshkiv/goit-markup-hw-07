@@ -22,6 +22,7 @@
     --color-border-modal-input: rgba(33, 33, 33, 0.2);
     --color-placeholder-textarea: rgba(117, 117, 117, 0.5);
     --color-border-checkbox: #212121;
+    --background-servises-text: rgba(47, 48, 58, 0.8);
 
     --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -315,7 +316,7 @@ img {
     display: block;
     padding-bottom: 94px;
 }
-.servises-header {
+.servises__header {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -324,33 +325,34 @@ img {
     margin-bottom: 50px;
 }
 
-.servises-list {
+.servises__list {
     display: flex;
 }
 
-.servises-list .servises-list-item + .servises-list-item {
+.servises__list .servises__item + .servises__item {
     margin-left: 30px;
 }
 
-.servises-list-item {
+.servises__item {
     position: relative;
 }
 
-.servises-list-item-text {
+.servises__text {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 70px;
     position: absolute;
     bottom: 0;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--button-text-color);
-    background: rgba(47, 48, 58, 0.8);
-    width: 100%;
-    height: 70px;
+    background: var(--background-servises-text);
 }
 /* Команда */
 
