@@ -1,0 +1,47 @@
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.features__list {
+    display: flex;
+}
+
+.features__item {
+    display: block;
+}
+
+.features__container {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-team);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.features__list .features__item + .features__item {
+    margin-left: 30px;
+}
+
+/* .antenna::before {
+    background-image: url('../image/icon/symbol-defs.svg#icon-antenna-1');
+} */
+
+.features__title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+    min-width: 270px;
+}
+
+.features__text {
+    line-height: 1.7;
+    width: 270px;
+
+    color: var(--second-text-color);
+}
