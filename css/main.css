@@ -743,6 +743,10 @@ img {
   margin-right: 5px;
 }
 
+.checkbox__input:focus + .checkbox__text::before {
+  border-color: var(--accent-color);
+}
+
 .checkbox__input:checked + .checkbox__text::before {
   background-color: var(--accent-color);
   border: none;
