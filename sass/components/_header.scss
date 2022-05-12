@@ -12,27 +12,6 @@
     align-items: center;
 }
 
-.logo {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: inherit;
-
-    padding-top: 24px;
-    padding-bottom: 25px;
-}
-
-.logo__web {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: var(--accent-color);
-}
-
 .navigation__link {
     display: block;
     padding-top: 32px;
@@ -45,6 +24,11 @@
     position: relative;
 
     transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .navigation__link--active::after {
@@ -61,17 +45,17 @@
     bottom: 0;
 }
 
-.navigation__list .navigation__link--active {
-    color: var(--accent-color);
-}
-
 .navigation__list {
     display: flex;
     margin-left: 93px;
-}
 
-.navigation__list .navigation__list + .navigation__list {
-    margin-left: 50px;
+    .navigation__link--active {
+        color: var(--accent-color);
+    }
+
+    .navigation__list + .navigation__list {
+        margin-left: 50px;
+    }
 }
 
 .contacts {
@@ -95,16 +79,14 @@
     color: var(--second-text-color);
 
     transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .contacts__icon {
     margin-right: 10px;
     fill: currentColor;
-}
-
-.navigation__link:hover,
-.navigation__link:focus,
-.contacts__link:hover,
-.contacts__link:focus {
-    color: var(--accent-color);
 }

@@ -13,10 +13,10 @@
 
 .servises__list {
     display: flex;
-}
 
-.servises__list .servises__item + .servises__item {
-    margin-left: 30px;
+    .servises__item + .servises__item {
+        margin-left: 30px;
+    }
 }
 
 .servises__item {

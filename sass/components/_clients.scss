@@ -31,10 +31,10 @@
     fill: var(--color-icon-team);
 
     transition: fill 250ms var(--timing-function), border 250ms var(--timing-function);
-}
 
-.clients__link:hover,
-.clients__link:focus {
-    fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        border: 1px solid var(--accent-color);
+    }
 }

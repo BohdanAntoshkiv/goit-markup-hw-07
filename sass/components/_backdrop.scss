@@ -3,7 +3,7 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--background-color-backdrop);
 
     display: flex;
     align-items: center;
