@@ -98,12 +98,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(33, 150, 243, 0.9);
+    background-color: var(--portfolio-project-list-text-background);
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: var(--portfolio-project-list-text-color);
     height: 100%;
     padding: 63px 24px;
 
